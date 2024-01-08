@@ -5,6 +5,7 @@ let carros = [
         km: 20000,
         ano: 1952,
         preco: 900000,
+        pagina: "/reservar/rolls-royce.html",
         estado: "Disponivel"
     },
     {
@@ -13,6 +14,7 @@ let carros = [
         km: 250000,
         ano: 1967,
         preco: 400000,
+        pagina: "/reservar/renault-gordinho.html",
         estado: "Reservado"
     },
     {
@@ -21,6 +23,7 @@ let carros = [
         km: 20000,
         ano: 1969,
         preco: 680000,
+        pagina: "",
         estado: "Vendido"
     },
     {
@@ -29,6 +32,7 @@ let carros = [
         km: 60000,
         ano: 1989,
         preco: 220000,
+        pagina: "",
         estado: "Reservado"
     },
     {
@@ -37,6 +41,7 @@ let carros = [
         km: 120000,
         ano: 1996,
         preco: 350000,
+        pagina: "",
         estado: "Reservado"
     },
     {
@@ -45,6 +50,7 @@ let carros = [
         km: 109000,
         ano: 1970,
         preco: 800000,
+        pagina: "",
         estado: "Reservado"
     },
     {
@@ -53,6 +59,7 @@ let carros = [
         km: 105000,
         ano: 1980,
         preco: 320000,
+        pagina: "",
         estado: "Reservado"
     },
     {
@@ -61,6 +68,7 @@ let carros = [
         km: 220000,
         ano: 1989,
         preco: 460000,
+        pagina: "",
         estado: "Vendido"
     },
 ]
@@ -75,6 +83,7 @@ function onClick(index) {
     const ano = document.getElementById("ano");
     const preco = document.getElementById("preco");
     const estado = document.getElementById("estado");
+    const botaoReservar = document.getElementById("reservar-button-link");
 
     modelo.innerHTML = carros[index].modelo;
     marca.innerHTML = carros[index].marca;
@@ -82,11 +91,10 @@ function onClick(index) {
     ano.innerHTML = carros[index].ano;
     preco.innerHTML = carros[index].preco;
     estado.innerHTML = carros[index].estado;
-
+    botaoReservar.href = carros[index].pagina;
 }
 
 function fecharModalCarro() {
     const modal = document.getElementById("modal-carro");
     modal.style.display = "none";
 }
-
