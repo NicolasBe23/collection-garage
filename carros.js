@@ -5,7 +5,7 @@ let carros = [
         km: 20000,
         ano: 1952,
         preco: 900000,
-        pagina: "/reservar/rolls-royce.html",
+        pagina: "rolls-royce.html",
         estado: "Disponivel"
     },
     {
@@ -14,7 +14,7 @@ let carros = [
         km: 250000,
         ano: 1967,
         preco: 400000,
-        pagina: "/reservar/renault-gordinho.html",
+        pagina: "renault-gordini.html",
         estado: "Reservado"
     },
     {
@@ -23,7 +23,7 @@ let carros = [
         km: 20000,
         ano: 1969,
         preco: 680000,
-        pagina: "",
+        pagina: "ford-mustang.html",
         estado: "Vendido"
     },
     {
@@ -32,7 +32,7 @@ let carros = [
         km: 60000,
         ano: 1989,
         preco: 220000,
-        pagina: "",
+        pagina: "land-rover.html",
         estado: "Reservado"
     },
     {
@@ -41,7 +41,7 @@ let carros = [
         km: 120000,
         ano: 1996,
         preco: 350000,
-        pagina: "",
+        pagina: "BMW-m3.html",
         estado: "Reservado"
     },
     {
@@ -50,7 +50,7 @@ let carros = [
         km: 109000,
         ano: 1970,
         preco: 800000,
-        pagina: "",
+        pagina: "chevrolet-chevelle.html",
         estado: "Reservado"
     },
     {
@@ -59,7 +59,7 @@ let carros = [
         km: 105000,
         ano: 1980,
         preco: 320000,
-        pagina: "",
+        pagina: "porsche-911.html",
         estado: "Reservado"
     },
     {
@@ -68,7 +68,7 @@ let carros = [
         km: 220000,
         ano: 1989,
         preco: 460000,
-        pagina: "",
+        pagina: "volvo-122.html",
         estado: "Vendido"
     },
 ]
@@ -97,4 +97,15 @@ function onClick(index) {
 function fecharModalCarro() {
     const modal = document.getElementById("modal-carro");
     modal.style.display = "none";
+}
+
+function reservar() {
+    var botao = document.getElementById("botaoReserva");
+  if (botao.innerHTML === "Reservar") {
+   
+    botao.innerHTML = "Reservado";
+  } else {
+    
+    console.log("O botão já está reservado.");
+  }
 }
