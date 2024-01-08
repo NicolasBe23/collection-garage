@@ -55,11 +55,30 @@ let carros = [
         preco: 460000,
         estado: "Vendido"
     },
-
 ]
 
+function onClick(index) {
+    const modal = document.getElementById("modal-carro");
+    modal.style.display = "flex";
 
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.6.3.min.js'; // Check https://jquery.com/ for the current version
-document.getElementsByTagName('head')[0].appendChild(script);
-$('#carro0').text(carros)
+    const modelo = document.getElementById("modelo");
+    const marca = document.getElementById("marca");
+    const km = document.getElementById("km");
+    const ano = document.getElementById("ano");
+    const preco = document.getElementById("preco");
+    const estado = document.getElementById("estado");
+
+    modelo.innerHTML = carros[index].modelo;
+    marca.innerHTML = carros[index].marca;
+    km.innerHTML = carros[index].km;
+    ano.innerHTML = carros[index].ano;
+    preco.innerHTML = carros[index].preco;
+    estado.innerHTML = carros[index].estado;
+
+}
+
+function fecharModalCarro() {
+    const modal = document.getElementById("modal-carro");
+    modal.style.display = "none";
+}
+
