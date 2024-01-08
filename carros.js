@@ -40,6 +40,14 @@ let carros = [
         estado: "Reservado"
     },
     {
+        marca: "Chevrolet",
+        modelo: "Chevelle",
+        km: 109000,
+        ano: 1970,
+        preco: 800000,
+        estado: "Reservado"
+    },
+    {
         marca: "Porche",
         modelo: "911",
         km: 105000,
