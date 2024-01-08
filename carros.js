@@ -19,7 +19,7 @@ if (localStorage.getItem('carros')) {
             km: 250000,
             ano: 1967,
             preco: 400000,
-            imagem: "",
+            imagem: "image/Design sem nome2.jpg",
             estado: "Reservado"
         },
         {
@@ -28,7 +28,7 @@ if (localStorage.getItem('carros')) {
             km: 20000,
             ano: 1969,
             preco: 680000,
-            imagem: "",
+            imagem: "image/car3.jpg",
             estado: "Vendido"
         },
         {
@@ -37,7 +37,7 @@ if (localStorage.getItem('carros')) {
             km: 60000,
             ano: 1989,
             preco: 220000,
-            imagem: "",
+            imagem: "image/Design sem nome4.jpg",
             estado: "Reservado"
         },
         {
@@ -46,7 +46,7 @@ if (localStorage.getItem('carros')) {
             km: 120000,
             ano: 1996,
             preco: 350000,
-            imagem: "",
+            imagem: "image/Design sem nome5.jpg",
             estado: "Reservado"
         },
         {
@@ -55,8 +55,8 @@ if (localStorage.getItem('carros')) {
             km: 109000,
             ano: 1970,
             preco: 800000,
-            imagem: "",
-            estado: "Reservado"
+            imagem: "image/Design sem nome.jpg",
+            estado: "Disponivel"
         },
         {
             marca: "Porche",
@@ -64,7 +64,7 @@ if (localStorage.getItem('carros')) {
             km: 105000,
             ano: 1980,
             preco: 320000,
-            imagem: "",
+            imagem: "image/Design sem nome6.jpg",
             estado: "Reservado"
         },
         {
@@ -73,7 +73,7 @@ if (localStorage.getItem('carros')) {
             km: 220000,
             ano: 1989,
             preco: 460000,
-            imagem: "",
+            imagem: "image/Design sem nome7.jpg",
             estado: "Vendido"
         },
     ]
